@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -19,11 +19,13 @@ locale                   : "en-US"
 title                    : "Paradise is where I am"
 title_separator          : "-"
 name                     : "Jang Junyeong"
-description              : "An amazing website."
+description              : "느리더라도 꾸준히!"
 url                      : "https://joyyir.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -108,36 +110,48 @@ author:
   avatar           : "/assets/images/sleepingshibainu.png"
   bio              : "느리더라도 꾸준히!"
   location         : "Seoul, Korea"
-  email            : "joyyir@naver.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: mailto:joyyir@naver.com
+      url: mailto:joyyir@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-       url: "https://joyyir.github.io/"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://facebook.com/joyyir"
+      url: "https://facebook.com/joyyir"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/joyyir"
+      url: "https://github.com/joyyir"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/joyyir"
+      url: "https://instagram.com/joyyir"
 
 # Site Footer
 footer:
   links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://facebook.com/joyyir"
+      url: "https://facebook.com/joyyir"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/joyyir"
+      url: "https://github.com/joyyir"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/joyyir"
+      url: "https://instagram.com/joyyir"
 
 
 # Reading Files
