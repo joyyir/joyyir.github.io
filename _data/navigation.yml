@@ -10,3 +10,11 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: 책 요약
+    children:
+      - title: "Clean Code"
+        url: /docs/quick-start-guide/
+      - title: "Effective Java"
+        url: /docs/structure/
