@@ -15,6 +15,6 @@ docs:
   - title: 책 요약
     children:
       - title: "Clean Code"
-        url: /docs/quick-start-guide/
+        url: /categories/clean-code/
       - title: "Effective Java"
-        url: /docs/structure/
+        url: /categories/effective-java/
