@@ -65,4 +65,5 @@ ReactiveX 공식 홈페이지 Introduction 요약 : [링크](http://reactivex.io
 * 이 두 가지 추가 덕분에, Iterable에서 가능한 모든 연산을 Observable에서도 할 수 있게 됨
 
 ## Comment
-* synchronous programming 사고방식에 너무 익숙해져서 비동기적으로 생각하는게 
+* synchronous programming 사고방식에 너무 익숙해져서 비동기적으로 생각하는게 낯설기만하다. ReactiveX 학습은 이런 동기적 사고방식을 비동기적 사고방식으로 바꾸는 첫 관문이 될 것 같다.
+* 이 문서에서는 Iterable보다 Observable이 보다 유연하다고 설명하고 있다. Observable을 사용하여 동기, 비동기에 대한 처리를 모두 할 수 있다면, 굳이 유연성이 떨어지는 Iterable 방식을 고집할 필요가 없을 것이다.
