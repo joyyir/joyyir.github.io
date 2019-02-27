@@ -4,7 +4,7 @@ description: Spring MVC Test Framework 요약
 excerpt : Spring MVC Test 코드를 만들어보자!
 date: 2019-02-27 00:00:00 -0400
 categories:
-  - Spring
+  - Spring Framework
 tags:
   - Spring
   - Spring MVC
