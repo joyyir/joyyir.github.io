@@ -22,3 +22,5 @@ docs:
     children:
       - title: "Reactive Programming"
         url: /categories/reactive-programming/
+      - title: "Spring Framework"
+        url: /categories/spring-framework/
