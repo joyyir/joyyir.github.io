@@ -89,7 +89,6 @@ MockMvc mockMvc = MockMvcBuilders.standaloneSetup(new TestController())
     .alwaysExpect(MockMvcResultMatchers.status().isOk()) // 항상 응답의 상태는 200을 예상함
     .alwaysExpect(MockMvcResultMatchers.content().contentType("application/json;charset=UTF-8")) // 항상 응답의 `Content-Type`은 json을 예상 
     .build();
-
 // 여러 요청에 걸쳐서 Session을 공유할 수도 있음
 MockMvc mockMvc = MockMvcBuilders.standaloneSetup(new TestController())
     .apply(SharedHttpSessionConfigurer.sharedHttpSession())
