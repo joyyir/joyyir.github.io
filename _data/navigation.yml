@@ -20,6 +20,8 @@ docs:
         url: /categories/effective-java/
       - title: "실용주의 프로그래머"
         url: /categories/the-pragmatic-programmer/
+      - title: "자바스크립트 패턴과 테스트"
+        url: /categories/reliable-javascript/
   - title: 학습
     children:
       - title: "Reactive Programming"
