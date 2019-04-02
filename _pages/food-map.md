@@ -7,9 +7,28 @@ permalink: /food-map/
 .info_window {
     margin: 10px;
 }
+.btn_mylct {
+    border: 1px solid rgba(58,70,88,.45);
+    border-radius: 20px;
+    background: #fcfcfd;
+    color: transparent;
+    display: block;
+    margin: 5px;
+}
+.location {
+    background: url("/assets/images/location.png");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position-x: 2px;
+    background-position-y: 5px;
+    width:32px;
+    height:32px;
+    display: -webkit-box;
+}
 </style>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ia9wjc5v1n"></script>
 <div id="map" style="width:100%;height:800px;"></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/hadrien" title="Hadrien">Hadrien</a> from <a href="https://www.flaticon.com/"              title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"              title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 <script>
 
 // (o) 상호명
@@ -44,6 +63,29 @@ window.addEventListener('DOMContentLoaded', function () {
 var map = new naver.maps.Map('map', {
         //center: cityhall,
         zoom: 4
+    });
+
+var locationBtnHtml = '<a href="#" class="btn_mylct"><span class="location"></span></a>'
+
+var customControl = new naver.maps.CustomControl(locationBtnHtml, {
+    position: naver.maps.Position.TOP_RIGHT
+});
+
+customControl.setMap(map);
+
+var domEventListener = naver.maps.Event.addDOMListener(customControl.getElement(), 'click', function() {
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                console.dir(position);
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                map.setCenter(new naver.maps.LatLng(latitude, longitude));
+                map.setZoom(8);
+            },
+            function (error) {
+                console.error(error);
+            }
+        );
     });
 
 function getContentString(data) {
