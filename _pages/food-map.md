@@ -35,7 +35,7 @@ permalink: /food-map/
 }
 </style>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ia9wjc5v1n"></script>
-<div id="map" style="width:100%;height:800px;"></div>
+<div id="map" style="width:100%;height:550px;"></div>
 <div>Icons made by <a href="https://www.flaticon.com/authors/hadrien" title="Hadrien">Hadrien</a> from <a href="https://www.flaticon.com/"              title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"              title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 <script>
 
@@ -124,13 +124,9 @@ function getInfoWindow(data) {
 
 function getUserLocationMarker(map) {
     return new naver.maps.Marker({
-        //position: latLng.destinationPoint(90, 15),
         map: map,
         icon: {
-            content: '<span class="red_dot"></span>',
-            size: new naver.maps.Size(50, 52),
-            origin: new naver.maps.Point(0, 0),
-            anchor: new naver.maps.Point(25, 26)
+            content: '<span class="red_dot"></span>'
         },
         visible: false
     });
