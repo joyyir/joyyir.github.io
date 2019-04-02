@@ -87,7 +87,6 @@ var domEventListener = (function (map, customControl, userLocationMarker) {
                 var longitude = position.coords.longitude;
                 var latLng = new naver.maps.LatLng(latitude, longitude)
                 map.setCenter(latLng);
-                map.setZoom(8);
 
                 userLocationMarker.setPosition(latLng);
                 userLocationMarker.setVisible(true);
