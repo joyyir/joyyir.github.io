@@ -25,6 +25,14 @@ permalink: /food-map/
     height:32px;
     display: -webkit-box;
 }
+.red_dot {
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+}
 </style>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ia9wjc5v1n"></script>
 <div id="map" style="width:100%;height:800px;"></div>
@@ -65,28 +73,31 @@ var map = new naver.maps.Map('map', {
         zoom: 4
     });
 
-var locationBtnHtml = '<a href="#" class="btn_mylct"><span class="location"></span></a>'
-
-var customControl = new naver.maps.CustomControl(locationBtnHtml, {
+var customControl = new naver.maps.CustomControl('<a href="#" class="btn_mylct"><span class="location"></span></a>', {
     position: naver.maps.Position.TOP_RIGHT
 });
-
 customControl.setMap(map);
 
-var domEventListener = naver.maps.Event.addDOMListener(customControl.getElement(), 'click', function() {
+var userLocationMarker = getUserLocationMarker(map);
+var domEventListener = (function (map, customControl, userLocationMarker) {
+    return naver.maps.Event.addDOMListener(customControl.getElement(), 'click', function() {
         navigator.geolocation.getCurrentPosition(
             function (position) {
-                console.dir(position);
                 var latitude = position.coords.latitude;
                 var longitude = position.coords.longitude;
-                map.setCenter(new naver.maps.LatLng(latitude, longitude));
+                var latLng = new naver.maps.LatLng(latitude, longitude)
+                map.setCenter(latLng);
                 map.setZoom(8);
+
+                userLocationMarker.setPosition(latLng);
+                userLocationMarker.setVisible(true);
             },
             function (error) {
                 console.error(error);
             }
         );
     });
+})(map, customControl, userLocationMarker);
 
 function getContentString(data) {
     return [
@@ -109,6 +120,20 @@ function getInfoWindow(data) {
         anchorSkew: true,
         anchorColor: "#ffffff",
         pixelOffset: new naver.maps.Point(20, -20)
+    });
+}
+
+function getUserLocationMarker(map) {
+    return new naver.maps.Marker({
+        //position: latLng.destinationPoint(90, 15),
+        map: map,
+        icon: {
+            content: '<span class="red_dot"></span>',
+            size: new naver.maps.Size(50, 52),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(25, 26)
+        },
+        visible: false
     });
 }
 </script>
