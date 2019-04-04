@@ -18,7 +18,6 @@ permalink: /food-map/
 
 window.addEventListener('DOMContentLoaded', function () {
     $.ajax({url: '/assets/json/food_temp.json', success: function(dataArray) {
-        console.dir(dataArray);
         var latLngArray = dataArray.map(data => [data, new naver.maps.LatLng(data.py, data.px)]);
         var markerArray = latLngArray.map(arr => new naver.maps.Marker({
             map: map,
@@ -69,7 +68,6 @@ var domEventListener = (function (map, customControl, userLocationMarker) {
 })(map, customControl, userLocationMarker);
 
 function getContentString(data) {
-    console.dir(data);
     return [
         `<div class="info_window">`,
         `   <h3>${data.name}</h3>`,
