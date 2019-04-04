@@ -1,0 +1,29 @@
+.info_window {
+    margin: 10px;
+}
+.btn_mylct {
+    border: 1px solid rgba(58,70,88,.45);
+    border-radius: 20px;
+    background: #fcfcfd;
+    color: transparent;
+    display: block;
+    margin: 5px;
+}
+.location {
+    background: url("/assets/images/location.png");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position-x: 2px;
+    background-position-y: 5px;
+    width:32px;
+    height:32px;
+    display: -webkit-box;
+}
+.red_dot {
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+}

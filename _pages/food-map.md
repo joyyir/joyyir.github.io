@@ -3,37 +3,7 @@ layout: default
 permalink: /food-map/
 ---
 
-<style type="text/css">
-.info_window {
-    margin: 10px;
-}
-.btn_mylct {
-    border: 1px solid rgba(58,70,88,.45);
-    border-radius: 20px;
-    background: #fcfcfd;
-    color: transparent;
-    display: block;
-    margin: 5px;
-}
-.location {
-    background: url("/assets/images/location.png");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    background-position-x: 2px;
-    background-position-y: 5px;
-    width:32px;
-    height:32px;
-    display: -webkit-box;
-}
-.red_dot {
-    width: 18px;
-    height: 18px;
-    background-color: red;
-    border-radius: 50%;
-    border: 2px solid white;
-    display: block;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="/assets/css/food-map.css">
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ia9wjc5v1n"></script>
 <div id="map" style="width:100%;height:550px;"></div>
 <div>Icons made by <a href="https://www.flaticon.com/authors/hadrien" title="Hadrien">Hadrien</a> from <a href="https://www.flaticon.com/"              title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"              title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
@@ -99,11 +69,13 @@ var domEventListener = (function (map, customControl, userLocationMarker) {
 })(map, customControl, userLocationMarker);
 
 function getContentString(data) {
+    console.dir(data);
     return [
-        '<div class="info_window">',
-        '   <h3>' + data.name + '</h3>',
-        '   <p>' + data.address,
+        `<div class="info_window">`,
+        `   <h3>${data.name}</h3>`,
+        `   <p>${data.address}`,
         '   </p>',
+        `   <a href="${getNaverRouteUrl(true, '', '', '', data.name, data.px, data.py)}">길찾기</a>`,
         '</div>'
     ].join('');
 }
@@ -130,5 +102,13 @@ function getUserLocationMarker(map) {
         },
         visible: false
     });
+}
+
+// sample : getNaverRouteUrl(false, '출발지입니다', 126.9816485, 37.4765675, '도착지입니다', 127.0276368, 37.4979502);
+function getNaverRouteUrl(isMobile, startName, startX, startY, endName, endX, endY) {
+    if (isMobile) {
+        return `http://m.map.naver.com/route.nhn?menu=route&sname=${startName}&sx=${startX}&sy=${startY}&ename=${endName}&ex=${endX}&ey=${endY}&pathType=0&showMap=true`
+    }
+    return `http://map.naver.com/index.nhn?slng=${startX}&slat=${startY}&stext=${startName}&elng=${endX}&elat=${endY}&etext=${endName}&menu=route&pathType=1`
 }
 </script>
