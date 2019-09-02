@@ -22,6 +22,8 @@ docs:
         url: /categories/the-pragmatic-programmer/
       - title: "자바스크립트 패턴과 테스트"
         url: /categories/reliable-javascript/
+      - title: "자기계발서"
+        url: /categories/self-development/
   - title: 학습
     children:
       - title: "Reactive Programming"
