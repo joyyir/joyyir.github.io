@@ -12,7 +12,7 @@ main:
   #   url: /sitemap/
 
 docs:
-  - title: 책 요약
+  - title: 독서
     children:
       - title: "Clean Code"
         url: /categories/clean-code/
@@ -24,6 +24,8 @@ docs:
         url: /categories/reliable-javascript/
       - title: "자기계발서"
         url: /categories/self-development/
+      - title: "문학"
+        url: /categories/literature/
   - title: 학습
     children:
       - title: "Reactive Programming"
