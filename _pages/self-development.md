@@ -1,5 +1,5 @@
 ---
 layout: category
-permalink: /categories/self-development/
-taxonomy: Self Development
+permalink: /categories/personal-development/
+taxonomy: Personal Development
 ---
