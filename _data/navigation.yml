@@ -32,6 +32,8 @@ docs:
         url: /categories/reactive-programming/
       - title: "Spring Framework"
         url: /categories/spring-framework/
+      - title: "Java"
+        url: /categories/java/
   - title: 취미
     children:
       - title: "Piano Playing"
