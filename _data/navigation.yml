@@ -34,6 +34,8 @@ docs:
         url: /categories/spring-framework/
       - title: "Java"
         url: /categories/java/
+      - title: "Front-end"
+        url: /categories/front-end/
   - title: 취미
     children:
       - title: "Piano Playing"
