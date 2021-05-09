@@ -34,5 +34,9 @@ docs:
         url: /categories/spring-framework/
       - title: "Java"
         url: /categories/java/
+      - title: "JPA"
+        url: /categories/jpa/
+      - title: "DDD"
+        url: /categories/ddd/
       - title: "Front-end"
         url: /categories/front-end/
