@@ -271,7 +271,7 @@ permalink: /about/
             <div class="row clearfix">
   <div class="col-md-12">
     <ul>
-  <li><a href="https://joyyir.github.io/">개인 블로그</a></li>
+  <li><a href="https://joyyir.github.io/">개인 개발 블로그</a></li>
   <li><a href="https://drive.google.com/file/d/0B-Q3HcQtLz_8RjZmdk5WOEFPSkE/view?usp=sharing">2016 포트폴리오 pdf</a></li>
 </ul>
 
