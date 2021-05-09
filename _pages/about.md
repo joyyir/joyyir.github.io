@@ -5,7 +5,24 @@ permalink: /about/
 <!-- modern-resume-theme에서 생성된 _site/index.html의 body 붙여넣기 -->
 <!-- /assets/main.css은 /assets/about/assets/main.css로 대체 -->
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jang Junyeong | 11Street Back-end Software Engineer</title><!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="11Street Back-end Software Engineer" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="11Street Back-end Software Engineer" />
+<script type="application/ld+json">
+{"headline":"11Street Back-end Software Engineer","url":"http://localhost:4000/","name":"11Street Back-end Software Engineer","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/about/assets/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/about/assets/favicon.ico">
+</head>
 <body class=""><div class="container header-contianer">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
