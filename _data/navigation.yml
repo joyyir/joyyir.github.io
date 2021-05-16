@@ -40,3 +40,5 @@ docs:
         url: /categories/ddd/
       - title: "Front-end"
         url: /categories/front-end/
+      - title: "Design Pattern"
+        url: /categories/design-pattern/
