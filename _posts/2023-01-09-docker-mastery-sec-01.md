@@ -30,3 +30,7 @@ Udemy [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www
     - reduced environment variances
   3. Speed (of business)
     - increase speed of change
+
+## 생각
+
+**왜 Docker를 써야하는가?** 이 부분이 이번 강의의 핵심인 것 같다. 컴퓨팅 자원을 격리시켜서 사용할 수 있다는 점, 다양한 환경에서 일관된 방식으로 사용할 수 있다는 점, 비즈니스 요구에 빠르게 대응할 수 있다는 점이 Docker를 사용하는 이유인 것 같다.
