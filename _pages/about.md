@@ -66,11 +66,53 @@ permalink: /about/
 
           <div class="container list-container">
             <h3>Projects</h3>
-            
+
+<div class="row clearfix layout layout-left">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>11번가 Open API Gateway 플랫폼 개선</h4>
+<a href="http://" target="_blank" class="link">2023.3 - 2023.6</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><h4 id="주요-내용">주요 내용</h4>
+<ul>
+  <li>11번가 Open API 시스템에 API Gateway를 도입하여 기존의 Monolithic 구조에서 벗어나 MSA로 나아갈 수 있는 환경 구성</li>
+  <li>자세한 내용은 <a href="https://www.youtube.com/watch?v=2NLOrcz_Cfo">11번가 TechTalk 2023 </a>발표 내용 참고</li>
+</ul>
+
+<h4 id="본인이-기여한-점">본인이 기여한 점</h4>
+<ul>
+  <li>기존 시스템 현황 파악 및 신규 시스템 설계</li>
+  <li>기존 시스템에서 인증, 인가 서버 분리</li>
+  <li>API Gateway (Apache APISIX) 구축</li>
+  <li>APISIX Java Custom Plugin 개발</li>
+  <li>신규 시스템으로 트래픽 마이그레이션</li>
+  <li>로깅, 모니터링 구축 (Prometheus, Grafana)</li>
+  <li>문서화, 사내 발표, 11번가 TechTalk 발표</li>
+</ul>
+
+<h4 id="사용한-기술스택-및-지식">사용한 기술스택 및 지식</h4>
+<ul>
+  <li>API Gateway : <a href="https://apisix.apache.org/">Apache APISIX</a> with Helm Chart, Java Plugin Runner</li>
+  <li>인프라 환경 : <a href="https://kubernetes.io/">Kubernetes</a>, <a href="https://aws.amazon.com/ko/eks/">AWS EKS</a></li>
+  <li>인증, 인가 서버 : Java 17, Spring Boot 3 + MVC</li>
+</ul>
+
+<h4 id="결과-및-성과">결과 및 성과</h4>
+<ul>
+  <li>최신 기술 스택을 사용할 수 있는 환경 조성</li>
+  <li>인증, 인가 로직과 비즈니스 로직의 강결합이 제거되어서 각 개발팀이 비즈니스 로직에만 집중할 수 있도록함</li>
+  <li>일관된 방식의 로깅과 모니터링을 제공</li>
+  <li>GitOps, Hot-reload, Custom Plugin을 제공하여 개발, 유지보수 편의성을 높임</li>
+</ul>
+
+    </div>
+  </div>
+
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4>11번가 전시 상품 데이터 플랫폼 개발</h4>
-<a href="http://" target="_blank" class="link">2020.5 - 현재</a><p class="no-print aditional-links">
+      <h4>11번가 전시 상품 데이터 플랫폼 개발 및 운영</h4>
+<a href="http://" target="_blank" class="link">2020.5 - 2021.12</a><p class="no-print aditional-links">
         
       </p>
     </div>
@@ -89,6 +131,7 @@ permalink: /about/
   <li>ELK, Grafana, Metricbeat를 활용한 모니터링 환경 구축</li>
   <li>기존 데이터와 신규 데이터의 비교 및 검증을 위한 Validator 구현 및 Grafana를 통한 시각화</li>
   <li>Spring Batch 기반 전시 상품 데일리 갱신을 위한 Batch Application 개발</li>
+  <li>대용량 데이터 처리 시 성능 병목 파악 및 성능 최적화</li>
 </ul>
 
 <h4 id="사용한-기술스택-및-지식">사용한 기술스택 및 지식</h4>
@@ -101,7 +144,6 @@ permalink: /about/
 
 <h4 id="결과-및-성과">결과 및 성과</h4>
 <ul>
-  <li>2021년 상반기 내 상용 서비스 예정</li>
   <li>이벤트 기반 갱신으로 기존 대비 빠른 데이터 갱신</li>
   <li>고비용의 Oracle DB에서 MongoDB를 사용함으로 인한 비용 절감</li>
   <li>이벤트 기반 아키텍처의 이점인 느슨한 결합, 내구성, 확장성, 유연성 제공</li>
@@ -164,7 +206,19 @@ permalink: /about/
             
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4>11번가</h4><p><b>Manager</b></p><p>2018.9 - 현재</p>
+      <h4>11번가</h4><p><b>Core플랫폼개발팀, Internal플랫폼개발팀</b></p><p>2022.1 - 현재</p>
+<a href="https://www.11stcorp.com/" target="_blank" class="link">https://www.11stcorp.com/</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>11번가 MSA, Cloud 플랫폼 개발</p>
+
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-left">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>11번가</h4><p><b>Front개발팀, Finding개발팀</b></p><p>2018.9 - 2021.12</p>
 <a href="https://www.11stcorp.com/" target="_blank" class="link">https://www.11stcorp.com/</a><p class="no-print aditional-links">
         
       </p>
@@ -177,7 +231,7 @@ permalink: /about/
 
   <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4>SK Planet</h4><p><b>Manager</b></p><p>2017.1 - 2018.8</p>
+      <h4>SK Planet</h4><p><b>Front개발팀</b></p><p>2017.1 - 2018.8</p>
 <a href="https://www.skplanet.com/" target="_blank" class="link">https://www.skplanet.com/</a><p class="no-print aditional-links">
         
       </p>
