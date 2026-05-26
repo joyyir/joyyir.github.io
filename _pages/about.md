@@ -26,7 +26,7 @@ permalink: /about/
 <body class=""><div class="container header-contianer">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
-      <h1>Jang Junyeong</h1>
+      <h1>장준영</h1>
       <h2>11Street Back-end Software Engineer</h2>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
@@ -54,10 +54,13 @@ permalink: /about/
         <span class="profile-img" style="background-image: url(/assets/about/assets/image/profile.jpg)"></span>
       </div><div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
       <ul>
-  <li>2017년 SK플래닛에 신입 공채로 입사하여, 현재는 11번가에서 전시 서비스 및 플랫폼 개발 업무를 담당하고 있는 5년차 백엔드 개발자 입니다.</li>
-  <li>Java, Spring Framework 환경의 개발 경험이 많고, 최근에는 Batch, Kafka 관련 개발도 하고 있습니다.</li>
-  <li>깔끔한 코드, 성능이 좋은 코드를 짜고 싶은 욕심이 있습니다!</li>
-  <li>테스트 코드가 당연시되고 코드리뷰가 활발한 수평적인 분위기의 팀에서 일하고 싶습니다.</li>
+  <li>전시 도메인 서비스 개발과 플랫폼 엔지니어링에 경험이 있는 8년차 백엔드 개발자입니다. 주로 Java와 Spring을 사용해서 백엔드 개발을 해왔고, Kubernetes 환경에서 플랫폼 엔지니어링 경험이 있습니다. 성능 병목이나 시스템의 비효율적인 구조를 찾아내서 개선하는 일에 진심인 편입니다. 최근에는 LangChain 등을 활용해서 LLM 기반 애플리케이션 개발에 관심이 있습니다.</li>
+  <li>함께 일한 동료로부터 평가받았던 저의 강점은 다음과 같습니다.</li>
+  <ul>
+    <li>몰입, 집중력, 끈기</li>
+    <li>정보를 빠르게 습득하는 능력</li>
+    <li>문제점을 인식하고 다양한 방법으로 시도해서 문제를 해결하는 능력</li>
+  </ul>
 </ul>
 
     </div>
@@ -70,7 +73,7 @@ permalink: /about/
 <div class="row clearfix layout layout-left">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
       <h4>11번가 Open API Gateway 플랫폼 개선</h4>
-<a href="http://" target="_blank" class="link">2023.3 - 2023.6</a><p class="no-print aditional-links">
+<a href="http://" target="_blank" class="link">2023.1 - 2023.6</a><p class="no-print aditional-links">
         
       </p>
     </div>
@@ -104,6 +107,48 @@ permalink: /about/
   <li>인증, 인가 로직과 비즈니스 로직의 강결합이 제거되어서 각 개발팀이 비즈니스 로직에만 집중할 수 있도록함</li>
   <li>일관된 방식의 로깅과 모니터링을 제공</li>
   <li>GitOps, Hot-reload, Custom Plugin을 제공하여 개발, 유지보수 편의성을 높임</li>
+</ul>
+
+    </div>
+  </div>
+
+<div class="row clearfix layout layout-left">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>11번가 MSA, Cloud 플랫폼 개발</h4>
+<a href="http://" target="_blank" class="link">2022.1 - 현재</a><p class="no-print aditional-links">
+        
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><h4 id="주요-내용">주요 내용</h4>
+<ul>
+  <li>11번가에서 각 개발팀이 MSA, Cloud 환경(AWS EKS)에서 서비스를 운영할 수 있도록 플랫폼 개발</li>
+</ul>
+
+<h4 id="본인이-기여한-점">본인이 기여한 점</h4>
+<ul>
+  <li>모니터링 환경 구성 (Prometheus, Grafana, <a href="https://thanos.io/">Thanos</a>)</li>
+  <li>Kubernetes 오브젝트 생성 및 수정을 제어하는 Admission Controller 개발</li>
+  <li>IDC와 AWS EKS Service Discovery 통합을 위한 Operator 개발</li>
+  <li>Argo CD, Argo Rollouts 등 솔루션 운영</li>
+  <li><a href="https://github.com/line/armeria">line/ameria</a> 기반 사내용 gRPC Client/Server 라이브러리 구성</li>
+  <li>11번가 IDP(Internal Developer Platform) Wheelhouse 개발 (Argo Workflows 프로비저닝 기능)</li>
+  <li>Kubernetes 오브젝트 정보를 애플리케이션에서 활용할 수 있도록 CQRS 패턴 적용</li>
+</ul>
+
+<h4 id="사용한-기술스택-및-지식">사용한 기술스택 및 지식</h4>
+<ul>
+  <li>인프라 환경 : <a href="https://kubernetes.io/">Kubernetes</a>, <a href="https://aws.amazon.com/ko/eks/">AWS EKS</a></li>
+  <li>CI/CD : Bitbucket Pipelines, Argo CD (with Helm Chart), Argo Rollouts</li>
+  <li>모니터링 : Prometheus + Grafana(kube-prometheus-stack), Thanos</li>
+  <li>백엔드 앱 : Java 17, Spring Webflux, Spring Data MongoDB</li>
+  <li>프론트엔드 앱 : Svelte, Tailwind CSS</li>
+</ul>
+
+<h4 id="결과-및-성과">결과 및 성과</h4>
+<ul>
+  <li>스케일아웃 가능하고 데이터를 오래 보관할 수 있는 모니터링 환경 구성</li>
+  <li>Admission Control, Operator를 통해 안전하고 안정적으로 클러스터 운영</li>
+  <li>사내 개발자들이 쉽게 AWS EKS 환경에 Onboarding 할 수 있는 환경 제공</li>
 </ul>
 
     </div>
@@ -285,6 +330,9 @@ permalink: /about/
   <li><a href="https://www.udemy.com/certificate/UC-f5560c17-6a94-425f-bf1a-562cc1405d4e/?utm_campaign=email&amp;utm_source=sendgrid.com&amp;utm_medium=email">Apache Kafka Series - Learn Apache Kafka for Beginners v2</a></li>
   <li><a href="https://www.udemy.com/certificate/UC-a81a41fc-a5e5-4ae1-b2d1-abd960f71bfb/">MongoDB - The Complete Developer’s Guide 2020</a></li>
   <li><a href="https://www.udemy.com/certificate/UC-59a98f77-aed6-4e04-ac7a-8ddb919e7b11/">Domain Driven Design: Complete Software Architecture Course</a></li>
+  <li><a href="https://www.udemy.com/certificate/UC-99a227ba-cea7-47ac-9f61-50eecb339e38/">Kubernetes for the Absolute Beginners - Hands-on</a></li>
+  <li><a href="https://www.udemy.com/certificate/UC-b1b3d266-890e-466c-8e0e-b30e463c9f0f/">Java Application Performance Tuning and Memory Management</a></li>
+  <li><a href="https://www.udemy.com/certificate/UC-3d085174-6655-4a6f-bc74-d002bf50ff05/">The Complete Cloud Computing Software Architecture Patterns</a></li>
 </ul>
 
     </div>
@@ -299,6 +347,7 @@ permalink: /about/
     <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><ul>
   <li><a href="https://inf.run/z8mC">스프링 데이터 JPA</a></li>
   <li><a href="https://joyyir.github.io/front-end/vue-js-inflearn/">실습 UI 개발로 배워보는 순수 javascript 와 VueJS 개발</a></li>
+  <li><a href="https://www.inflearn.com/certificate/128161-324190-5167700">대세는 쿠버네티스 [초급~중급]</a></li>
 </ul>
 
     </div>
@@ -306,7 +355,20 @@ permalink: /about/
 
 
           </div>
-        
+
+          <div class="container text-container">
+            <h3>Tech Seminar</h3>
+            <div class="row clearfix">
+  <div class="col-md-12">
+    <ul>
+  <li><a href="https://www.youtube.com/watch?v=2NLOrcz_Cfo">[11번가 TechTalk 2023] APISIX로 11번가 Open API 모놀리식 시스템 개선하기</a></li>
+</ul>
+
+  </div>
+</div>
+
+          </div>
+
           <div class="container text-container">
             <h3>Publication</h3>
             <div class="row clearfix">
